@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div class="container">
+    <div>
+        <table>
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>이름</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="subject : ${subjects}">
+                <td th:text="${subject.getSubject_id()}"></td>
+                <td th:text="${subject.getSubject_name()}"></td>
+                <tb th:text="${subject.getSubject_circle()}"></tb>
+                <tb th:text="${subject.getSubject_desc()}"></tb>
+                <tb th:text="${subject.getSubject_pref()}"></tb>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
